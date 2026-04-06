@@ -63,6 +63,49 @@
 </head>
 
 <body>
+  <section id="contact">
+  <h2>Contact Mez Medici Media</h2>
+
+  <div data-fs-success hidden class="form-success">
+    ✅ Thanks — your message has been sent.
+  </div>
+
+  <div data-fs-error class="form-error"></div>
+
+  <form id="contact-form" novalidate>
+    <label>
+      Email
+      <input
+        type="email"
+        name="email"
+        required
+        data-fs-field
+        placeholder="you@example.com"
+      />
+    </label>
+    <span data-fs-error="email"></span>
+
+    <label>
+      Message
+      <textarea
+        name="message"
+        rows="5"
+        required
+        data-fs-field
+        placeholder="Tell us what you’re working on"
+      ></textarea>
+    </label>
+    <span data-fs-error="message"></span>
+
+    <!-- Optional but recommended -->
+    <input type="hidden" name="_subject" value="MezMediciMedia Contact Form" />
+    <input type="hidden" name="_template" value="table" />
+
+    <button type="submit" data-fs-submit-btn>
+      Send Message
+    </button>
+  </form>
+</section>
     <header>
         <h1>Welcome to MezMediciMedia</h1>
         <p>Your source for AI design media solutions</p>
