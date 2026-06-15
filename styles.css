@@ -1,3 +1,168 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  background: #0b0f14;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #0b0f14, #12181f);
+  border-bottom: 1px solid #00ffe1;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00ffe1;
+  text-shadow: 0 0 10px #00ffe1;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #cfcfcf;
+}
+
+/* MAIN LAYOUT */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #00ffe1;
+  border-left: 4px solid #00ffe1;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #00ffe1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 8px #00ffe1;
+}
+
+/* CONTACT FORM */
+#contact {
+  background: #0b0f14;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 0 15px #00ffe1;
+  border: 1px solid #00ffe1;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #12181f;
+  color: #ffffff;
+  font-size: 14px;
+  box-shadow: inset 0 0 5px #00ffe1;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffe1;
+}
+
+#contact button {
+  width: 100%;
+  padding: 12px;
+  background: #00ffe1;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  background: #00c9b3;
+  box-shadow: 0 0 10px #00ffe1;
+}
+
+/* SUCCESS POPUP */
+#success-popup {
+  display: none;
+  background: #00ffe1;
+  color: #000;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #00ffe1;
+  color: #888;
+}
+
+/* ========================= */
+/*  NEON SEO INTRO BLOCK     */
+/* ========================= */
+
+.seo-intro {
+  margin-top: 30px;
+  padding: 25px;
+  border-left: 4px solid #00ffe1;
+  background: rgba(0, 255, 225, 0.06);
+  box-shadow: 0 0 20px #00ffe1;
+  border-radius: 10px;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.seo-text {
+  font-size: 1.15rem;
+  color: #d9ffff;
+  text-shadow: 0 0 6px #00ffe1;
+  line-height: 1.7;
+}
+
+.tagline {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.35rem;
+  color: #00ffe1;
+  text-shadow: 0 0 15px #00ffe1;
+  font-weight: bold;
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 10px #00ffe1; }
+  50% { text-shadow: 0 0 25px #00ffe1; }
+  100% { text-shadow: 0 0 10px #00ffe1; }
+}
 
     body {
       margin: 0;
@@ -118,82 +283,3 @@
       color: #888;
     }
   
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-h1, h2 {
-    color: #4CAF50;
-}
-
-footer {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* SEO INTRO BLOCK */
-.seo-intro {
-  margin-top: 30px;
-  padding: 25px;
-  border-left: 4px solid #00ffe1;
-  background: rgba(0, 255, 225, 0.06);
-  box-shadow: 0 0 20px #00ffe1;
-  border-radius: 10px;
-  animation: fadeIn 1.2s ease-out;
-}
-
-/* SEO TEXT */
-.seo-text {
-  font-size: 1.15rem;
-  color: #d9ffff;
-  text-shadow: 0 0 6px #00ffe1;
-  line-height: 1.7;
-}
-
-/* TAGLINE */
-.tagline {
-  margin-top: 25px;
-  text-align: center;
-  font-size: 1.35rem;
-  color: #00ffe1;
-  text-shadow: 0 0 15px #00ffe1;
-  font-weight: bold;
-  animation: pulseGlow 2.5s infinite ease-in-out;
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes pulseGlow {
-  0% { text-shadow: 0 0 10px #00ffe1; }
-  50% { text-shadow: 0 0 25px #00ffe1; }
-  100% { text-shadow: 0 0 10px #00ffe1; }
-}
