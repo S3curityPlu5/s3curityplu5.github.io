@@ -282,4 +282,15 @@ footer {
       border-top: 1px solid #00ffe1;
       color: #888;
     }
-  
+  .neon-border {
+  border: 2px solid #00ffe1;
+  box-shadow: 0 0 12px #00ffe1, inset 0 0 12px #00ffe1;
+  animation: neonPulse 3s infinite ease-in-out;
+}
+
+@keyframes neonPulse {
+  0% { box-shadow: 0 0 8px #00ffe1, inset 0 0 4px #00ffe1; }
+  50% { box-shadow: 0 0 20px #00ffe1, inset 0 0 10px #00ffe1; }
+  100% { box-shadow: 0 0 8px #00ffe1, inset 0 0 4px #00ffe1; }
+}
+
