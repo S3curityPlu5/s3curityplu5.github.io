@@ -46,32 +46,187 @@
       <li>Web Development</li>
       <li>Social Media Management</li>
     </ul>
-  </section>
+  </section><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MezMediciMedia - Creative AI Design Media</title>
+  <link rel="stylesheet" href="styles.css">
 
-  <section id="media">
-    <h2>Music & Video Remix Samples</h2>
-    <p>
-      A dedicated page featuring Progressive House remix samples, advanced video editing, visual effects, and professionally mastered audio collections.
-    </p>
-    <p><a href="media.html">Go to remix portfolio</a></p>
-  </section>
+  <style>
+    body {
+      background: #050505;
+      color: #eaffff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-  <section id="contact">
-    <h2>Contact Us</h2>
+    /* Neon Grid Background */
+    .neon-grid {
+      background:
+        linear-gradient(90deg, rgba(0,255,225,0.08) 1px, transparent 1px),
+        linear-gradient(rgba(0,255,225,0.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+      padding: 40px;
+    }
 
-    <form id="contact-form" action="https://formspree.io/f/xpqokdwb" method="POST">
+    /* Animated Neon Headers */
+    h1, h2 {
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #00ffe1, #0088ff, #00ffe1);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: headerGlow 6s infinite linear;
+      margin-bottom: 20px;
+    }
 
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
+    @keyframes headerGlow {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 100% 0%; }
+      100% { background-position: 0% 0%; }
+    }
 
-      <button type="submit">Send Message</button>
-    </form>
+    /* Neon Boxes */
+    .neon-box {
+      border: 2px solid #00ffe1;
+      box-shadow: 0 0 12px #00ffe1, inset 0 0 12px #00ffe1;
+      padding: 20px;
+      margin-bottom: 40px;
+      animation: neonPulse 3s infinite ease-in-out;
+    }
 
-    <div id="success-popup">Message sent successfully!</div>
-  </section>
+    @keyframes neonPulse {
+      0% { box-shadow: 0 0 8px #00ffe1, inset 0 0 4px #00ffe1; }
+      50% { box-shadow: 0 0 20px #00ffe1, inset 0 0 10px #00ffe1; }
+      100% { box-shadow: 0 0 8px #00ffe1, inset 0 0 4px #00ffe1; }
+    }
 
-</main>
+    /* Tagline */
+    .tagline {
+      animation: strobePulse 1.8s infinite ease-in-out;
+      color: #00ffe1;
+      margin-top: 10px;
+    }
+
+    @keyframes strobePulse {
+      0% { opacity: 1; text-shadow: 0 0 10px #00ffe1; }
+      45% { opacity: 0.85; text-shadow: 0 0 25px #00ffe1; }
+      50% { opacity: 1; text-shadow: 0 0 40px #00ffe1; }
+      55% { opacity: 0.85; text-shadow: 0 0 25px #00ffe1; }
+      100% { opacity: 1; text-shadow: 0 0 10px #00ffe1; }
+    }
+
+    /* Contact Form */
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background: #0a0a0a;
+      border: 1px solid #00ffe1;
+      color: #eaffff;
+      box-shadow: 0 0 10px #00ffe1;
+    }
+
+    button {
+      background: #00ffe1;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 15px #00ffe1;
+      transition: 0.2s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 25px #00ffe1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #00ffe1;
+    }
+
+    #success-popup {
+      display: none;
+      margin-top: 10px;
+      color: #00ffe1;
+      text-shadow: 0 0 10px #00ffe1;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="neon-grid">
+
+  <header class="neon-box">
+    <h1>Welcome to MezMediciMedia</h1>
+    <p>Professional AI-driven media, sound, and visual design</p>
+  </header>
+
+  <main>
+
+    <section id="about" class="neon-box">
+      <h2>About Us</h2>
+
+      <p>
+        <b>Mez Medici Media</b> is a next-generation creative studio specializing in advanced AI-powered image expansion, audio engineering, and digital media production. Our work transforms single moments into fully immersive scenes—intelligently extended, refined, and crafted with precision while preserving the original aesthetic and intent.
+      </p>
+
+      <section class="seo-intro">
+        <p class="seo-text">
+          Mez Medici Media delivers high-performance digital content for creators who move with intent.
+          We engineer sound, visuals, and AI-driven media with accuracy, speed, and a commitment to professional quality.
+          This platform is built for artists, performers, and innovators who want their work to stand out with clarity, impact, and distinction in a crowded digital world.
+        </p>
+
+        <h3 class="tagline">
+          High-Impact Sound • Club-Ready Live PA • AI Visual Production • Modern Digital Media
+        </h3>
+      </section>
+    </section>
+
+    <section id="services" class="neon-box">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Video Production</li>
+        <li>Photography</li>
+        <li>Graphic Design</li>
+        <li>Web Development</li>
+        <li>Social Media Management</li>
+      </ul>
+    </section>
+
+    <section id="media" class="neon-box">
+      <h2>Music & Video Remix Samples</h2>
+      <p>
+        A dedicated page featuring Progressive House remix samples, advanced video editing, visual effects, and professionally mastered audio collections.
+      </p>
+      <p><a href="media.html" style="color:#00ffe1;">Go to remix portfolio</a></p>
+    </section>
+
+    <section id="contact" class="neon-box">
+      <h2>Contact Us</h2>
+
+      <form id="contact-form" action="https://formspree.io/f/xpqokdwb" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div id="success-popup">Message sent successfully!</div>
+    </section>
+
+  </main>
+
+</div>
 
 <footer>
   <p>&copy; 2026 MezMediciMedia. All rights reserved.</p>
